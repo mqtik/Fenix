@@ -1,0 +1,21 @@
+{
+  "name": "react-native-wkwebview",
+  "version": "2.0.0",
+  "summary": "React Native WKWebView for iOS",
+  "authors": "Ruoyu Sun <ruoysun@gmail.com> (https://github.com/insraq)",
+  "homepage": "https://github.com/CRAlpha/react-native-wkwebview",
+  "license": "MIT",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/CRAlpha/react-native-wkwebview.git",
+    "tag": "v2.0.0"
+  },
+  "source_files": "ios/RCTWKWebView/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

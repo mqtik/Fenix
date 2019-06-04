@@ -1,0 +1,59 @@
+{
+  "_from": "rn-bottom-drawer",
+  "_id": "rn-bottom-drawer@1.4.3",
+  "_inBundle": false,
+  "_integrity": "sha512-atS7HEQOoqLQftxyBalYHlf+YAEPw9zQ6RG00yf3xIu8TWsd5ST8Z0h3RwLFXsXnbvjP2OBvsvraZsXF8G7r0w==",
+  "_location": "/rn-bottom-drawer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "rn-bottom-drawer",
+    "name": "rn-bottom-drawer",
+    "escapedName": "rn-bottom-drawer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rn-bottom-drawer/-/rn-bottom-drawer-1.4.3.tgz",
+  "_shasum": "25468972181c7eaa59095d619d633c8bf4aeb967",
+  "_spec": "rn-bottom-drawer",
+  "_where": "/Users/development/React/Keetup/app",
+  "author": {
+    "name": "Jack K"
+  },
+  "bugs": {
+    "url": "https://github.com/jacklein/rn-bottom-drawer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  },
+  "deprecated": false,
+  "description": "a bottom drawer component for react native",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.51.0",
+    "react": "^16.6.3",
+    "react-native": "^0.57.8"
+  },
+  "homepage": "https://github.com/jacklein/rn-bottom-drawer#readme",
+  "keywords": [
+    "react-native",
+    "drawer"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "rn-bottom-drawer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacklein/rn-bottom-drawer.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.4.3"
+}
