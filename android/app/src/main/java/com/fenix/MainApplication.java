@@ -3,6 +3,7 @@ package com.fenix;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.mapbox.rctmgl.RCTMGLPackage;
 import com.mehcode.reactnative.splashscreen.SplashScreenPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -33,6 +34,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RCTMGLPackage(),
             new SplashScreenPackage(),
             new RNFetchBlobPackage(),
             new VectorIconsPackage(),

@@ -30,6 +30,8 @@ PODS:
     - Google-Maps-iOS-Utils (= 2.1.0)
     - GoogleMaps (= 2.5.0)
     - React
+  - react-native-mapbox-gl (7.0.0-rc2):
+    - React
   - react-native-maps (0.21.0):
     - React
   - react-native-wkwebview (2.0.0):
@@ -44,6 +46,9 @@ PODS:
     - React/Core
   - React/RCTBlob (0.57.8):
     - React/Core
+  - React/RCTCameraRoll (0.57.8):
+    - React/Core
+    - React/RCTImage
   - React/RCTGeolocation (0.57.8):
     - React/Core
   - React/RCTImage (0.57.8):
@@ -79,11 +84,13 @@ DEPENDENCIES:
   - GoogleMaps
   - "react-native-blur (from `../node_modules/@react-native-community/blur`)"
   - react-native-google-maps (from `../node_modules/react-native-maps`)
+  - "react-native-mapbox-gl (from `../node_modules/@react-native-mapbox-gl/maps`)"
   - react-native-maps (from `../node_modules/react-native-maps`)
   - react-native-wkwebview (from `../node_modules/react-native-wkwebview-reborn`)
   - React/Core (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
   - React/RCTActionSheet (from `../node_modules/react-native`)
+  - React/RCTCameraRoll (from `../node_modules/react-native`)
   - React/RCTGeolocation (from `../node_modules/react-native`)
   - React/RCTImage (from `../node_modules/react-native`)
   - React/RCTLinkingIOS (from `../node_modules/react-native`)
@@ -112,6 +119,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/blur"
   react-native-google-maps:
     :path: "../node_modules/react-native-maps"
+  react-native-mapbox-gl:
+    :path: "../node_modules/@react-native-mapbox-gl/maps"
   react-native-maps:
     :path: "../node_modules/react-native-maps"
   react-native-wkwebview:
@@ -134,6 +143,7 @@ SPEC CHECKSUMS:
   React: adbac0757ce35e92fbd447ab98c810209d27d9b0
   react-native-blur: cad4d93b364f91e7b7931b3fa935455487e5c33c
   react-native-google-maps: 68a831730110823d3dadfea0e133f0f4426cd213
+  react-native-mapbox-gl: 917d8e63323df89246de4e69c7378a5448017964
   react-native-maps: fb06a43ce6884256097eec1dd69d23957b71df88
   react-native-wkwebview: 7239b647cd5baa0322d2795beae833b00971b303
   rn-fetch-blob: 766f85cabd2992300dfa1be2bc9e4e258abc6f04
@@ -142,6 +152,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 6607bd3a30291d0edb56f9bbe7ae411ee2b928b0
   yoga: 74cdf036c30820443b25ade59916236b1e95ee93
 
-PODFILE CHECKSUM: ed2da857b0992c13915d16efdc58bebb32078f9d
+PODFILE CHECKSUM: eb03dd75f4ca8e706cfd9e16a4bcdeb10b7c77c1
 
 COCOAPODS: 1.6.1

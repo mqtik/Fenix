@@ -24,7 +24,7 @@ export default StyleSheet.create({
         ...StyleSheet.absoluteFillObject
     },
     scrollview: {
-        flex: 1
+        //flex: 1
     },
     map: {
         position: "absolute",

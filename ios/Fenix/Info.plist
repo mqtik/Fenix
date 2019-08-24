@@ -26,8 +26,6 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string/>
-	
-	
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -70,6 +68,7 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>Navigation.ttf</string>
 	</array>
 </dict>
 </plist>

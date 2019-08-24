@@ -42,6 +42,7 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		3375F80D22A4AF7F00163C7D /* libGoogle-Maps-iOS-Utils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3375F80E22A4AF7F00163C7D /* libGoogle-Maps-iOS-Utils.a */; };
 		3375F83522A4AF8800163C7D /* libreact-native-google-maps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3375F83622A4AF8800163C7D /* libreact-native-google-maps.a */; };
+		33C5EDBC22B1AA900061EB8D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C5EDBB22B1AA900061EB8D /* MapKit.framework */; };
 		472AC87EFC2280709741503A /* libPods-FenixTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533EF3D7B5ADF7FBB538BEB2 /* libPods-FenixTests.a */; };
 		51CC8B7479AF45779BAEFDC7 /* libRCTSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 843E5A5E6C5F461C867D8854 /* libRCTSplashScreen.a */; };
 		72BD707DA27B4F3F8FE382EF /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E68CE809CF794483BE7F331A /* FontAwesome5_Brands.ttf */; };
@@ -49,6 +50,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		853D08B3274841D68B682298 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82268006DA83448697D82249 /* Entypo.ttf */; };
 		9784FB4E4F9646CAB280F974 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9B87F57EFBE4BE08897C967 /* MaterialCommunityIcons.ttf */; };
+		A38ED0A8F76E45B98507C10A /* Navigation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B12440957404C80B0694C3F /* Navigation.ttf */; };
 		A3BD2C34A4464525A35FF597 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B820C89846E4476898D0D8B /* Feather.ttf */; };
 		A539EC15EA35CB3B98D640D1 /* libPods-Fenix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B99FEC1126765EA8C2AA29BE /* libPods-Fenix.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -217,6 +219,13 @@
 			remoteGlobalIDString = 9F90C2241D619E9400F3E238;
 			remoteInfo = RCTSplashScreen;
 		};
+		33C5EE6522B1D4030061EB8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33C5EE3B22B1D4030061EB8D /* RNMapboxDirection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNMapboxDirection;
+		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
@@ -375,7 +384,11 @@
 		3173F951B5F74AC59CF8E62A /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		3375F80E22A4AF7F00163C7D /* libGoogle-Maps-iOS-Utils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libGoogle-Maps-iOS-Utils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3375F83622A4AF8800163C7D /* libreact-native-google-maps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-google-maps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33C5EDBB22B1AA900061EB8D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		33C5EDE322B1AAA00061EB8D /* Fenix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Fenix.entitlements; path = Fenix/Fenix.entitlements; sourceTree = "<group>"; };
+		33C5EE3B22B1D4030061EB8D /* RNMapboxDirection.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNMapboxDirection.xcodeproj; path = ../libraries/navigator/ios/RNMapboxDirection.xcodeproj; sourceTree = "<group>"; };
 		384157CD084A87AD0CA47855 /* libPods-Fenix-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fenix-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B12440957404C80B0694C3F /* Navigation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Navigation.ttf; path = "../node_modules/react-native-maps-navigation/assets/fonts/Navigation.ttf"; sourceTree = "<group>"; };
 		4590E20502E94DE0A448F1F4 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		4D78C09D090C7B5CB8F7F645 /* Pods-FenixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenixTests.debug.xcconfig"; path = "Target Support Files/Pods-FenixTests/Pods-FenixTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D9876D431ECD07B32CA65E3 /* Pods-Fenix-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fenix-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Fenix-tvOS/Pods-Fenix-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -428,6 +441,7 @@
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
+				33C5EDBC22B1AA900061EB8D /* MapKit.framework in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
@@ -548,6 +562,7 @@
 		13B07FAE1A68108700A75B9A /* Fenix */ = {
 			isa = PBXGroup;
 			children = (
+				33C5EDE322B1AAA00061EB8D /* Fenix.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -585,6 +600,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33C5EDBB22B1AA900061EB8D /* MapKit.framework */,
 				3375F83622A4AF8800163C7D /* libreact-native-google-maps.a */,
 				3375F80E22A4AF7F00163C7D /* libGoogle-Maps-iOS-Utils.a */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
@@ -608,6 +624,14 @@
 			isa = PBXGroup;
 			children = (
 				3375F7D822A4073600163C7D /* libRCTSplashScreen.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33C5EE3C22B1D4030061EB8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33C5EE6622B1D4030061EB8D /* libRNMapboxDirection.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -648,6 +672,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				33C5EE3B22B1D4030061EB8D /* RNMapboxDirection.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -729,6 +754,7 @@
 				7F692762DEC54A39A39CF80E /* Octicons.ttf */,
 				4590E20502E94DE0A448F1F4 /* SimpleLineIcons.ttf */,
 				C920FD4320534E43923BC99F /* Zocial.ttf */,
+				3B12440957404C80B0694C3F /* Navigation.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -765,6 +791,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				A0B12E4A94C0EA6239B266E0 /* [CP] Copy Pods Resources */,
+				A2BC95D0FC64C6B6B0FDC14A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -828,6 +855,14 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 9ZJF7GJ4KP;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -903,6 +938,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 33C5EE3C22B1D4030061EB8D /* Products */;
+					ProjectRef = 33C5EE3B22B1D4030061EB8D /* RNMapboxDirection.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1054,6 +1093,13 @@
 			fileType = archive.ar;
 			path = libRCTSplashScreen.a;
 			remoteRef = 3375F7D722A4073600163C7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33C5EE6622B1D4030061EB8D /* libRNMapboxDirection.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNMapboxDirection.a;
+			remoteRef = 33C5EE6522B1D4030061EB8D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -1213,6 +1259,7 @@
 				0A84470432794163BDC2F758 /* Octicons.ttf in Resources */,
 				F00EB5A91EFE4EE6AC0877A7 /* SimpleLineIcons.ttf in Resources */,
 				2A5B088E0525441D8C541D87 /* Zocial.ttf in Resources */,
+				A38ED0A8F76E45B98507C10A /* Navigation.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1362,6 +1409,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fenix/Pods-Fenix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2BC95D0FC64C6B6B0FDC14A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fenix/Pods-Fenix-frameworks.sh",
+				"${PODS_ROOT}/../../node_modules/@react-native-mapbox-gl/maps/ios/Mapbox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fenix/Pods-Fenix-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB5469432D0F6CF12504E588 /* [CP] Check Pods Manifest.lock */ = {

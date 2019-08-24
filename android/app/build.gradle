@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':@react-native-mapbox-gl_maps')
     compile project(':rn-splash-screen')
     compile project(':rn-fetch-blob')
     compile project(':react-native-vector-icons')

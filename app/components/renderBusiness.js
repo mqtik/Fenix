@@ -11,24 +11,39 @@ import { getLang, Languages } from '../static/languages';
 import { StretchyHeader } from '../../libraries/stretchy';
 import {Column as Col, Row} from 'react-native-flexbox-grid';
 import API from '../services/api';
+import { FluidNavigator, Transition } from 'react-navigation-fluid-transitions';
 
 const Remote = new API({ url: API_URL })
 let ApplicationStorage = PouchDB(LOCAL_DB_NAME);
-
+var ancho = Dimensions.get('window').width; //full width
+var alto = Dimensions.get('window').height; //full height
 export default class RenderBusiness extends Component<Props>{
     constructor (props) {
         super(props);
     }
     componentDidMount() {
+      console.log("Render Business Props", this.props)
 
     }
-    
+    goBusiness = (key, region) => {
+      console.log("goBusiness")
+      this.props.onRegionChange(region)
+      this.props.navigation.navigate('Go', {
+        goDisplayRoute: this.props.goDisplayRoute,
+        goNavigateRoute: this.props.goNavigateRoute,
+        _returnDirections: this.props._returnDirections,
+        _region: region,
+        _key: key
+      })
+    }
     render(){
        
         return(
-            <ScrollView style={{height:350}}>
+            <ScrollView 
+            style={{ height: 400, width:'100%', alignSelf:'stretch' }}
+             onScroll={e => this.props.onScrolling()}>
             <TouchableOpacity activeOpacity={1}>
-            {this.props.businessList.data.map((key, i) => {
+            { this.props.businessList != null && this.props.businessList.data.map((key, i) => {
                           for(let k in key){
                             let region = { 
                               latitude: key.latitude,
@@ -39,11 +54,13 @@ export default class RenderBusiness extends Component<Props>{
                             return (
          <View key={key.name} style={{flex: 1, marginTop: 10, width: '100%'}}>
            <Row size={12}>
-            <Col sm={3} md={3} lg={3}>
+            <Col sm={3} md={3} lg={3} style={{justifyContent: 'center'}}>
+            <Transition key={key.logo.small} shared={key.logo.small}>
               <Image
-                style={{height: 50, width: 60, borderRadius: 10}}
+                style={{height: 50, width: 60, borderRadius: 10, alignSelf: 'center'}}
                 source={{uri: key.logo.small}}
               />
+            </Transition>
             </Col>
             <Col sm={7} md={7} lg={7} style={{paddingLeft: 10}}>
                <Text style={{marginTop: 0, fontSize: 16,
@@ -55,8 +72,8 @@ export default class RenderBusiness extends Component<Props>{
         textAlign: 'left'}}>{key.address}</Text>
             </Col>
             <Col sm={2} md={2} lg={2} style={{paddingLeft: 10}}>
-              <TouchableOpacity onPress={() => this.props.onRegionChange(region)}>
-               <Icono name="ios-navigate" style={{color: 'rgba(255,255,255,.5)', fontSize: 30, textAlign: 'right', marginTop: 3}} />
+              <TouchableOpacity onPress={() => this.goBusiness(key, region)}>
+               <Icono name="ios-navigate" style={{color: 'rgba(255,255,255,.5)', fontSize: 30, textAlign: 'right', marginTop: 3, alignSelf: 'center'}} />
               </TouchableOpacity>
             </Col>
           </Row> 
@@ -65,7 +82,7 @@ export default class RenderBusiness extends Component<Props>{
                           }
                          
                           
-                        })}
+                        }) }
               </TouchableOpacity>
             </ScrollView>
         );

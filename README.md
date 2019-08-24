@@ -9,6 +9,7 @@ npm install
 5. react-native link react-native-dialogs
 6. react-native link react-native-vector-icons
 7. RNFB_ANDROID_PERMISSIONS=true react-native link react-native-fetch-blob
+8. react-native link react-native-maps-navigation
 
 # Clean Install
 lsof -ti :8081 | xargs kill -9
@@ -50,7 +51,7 @@ Place this code where doFirst{} method is
 
 	- No bundle URL present.
 		Run: 
-			rm -rf ios/build/; lsof -ti :8081 | xargs kill -9; react-native run-ios
+			 rm -rf ios/build/; lsof -ti :8081 | xargs kill -9; react-native run-ios --simulator="iPhone 6"
 
 	- React Native Settings
 		Go to react-native-settings under node_modules folder, and change its .JSX extensions to .JS
@@ -256,3 +257,9 @@ And in the AppDelegator, let's define API Key
 
 @end
 ```
+
+# Updated iOS?
+Go to:
+`/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport`
+and copy one of the folders, example 12.0.1, and rename like: 12.2.1 ({id}) and paste it again.
+The {id} is whatever is under () in other folder examples.
