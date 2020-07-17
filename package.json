@@ -21,7 +21,7 @@
     "@turf/turf": "^5.1.6",
     "epubjs-rn": "0.0.127",
     "geolib": "^3.0.4",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "pouchdb-adapter-asyncstorage": "^6.4.1",
     "pouchdb-authentication": "^1.1.3",
