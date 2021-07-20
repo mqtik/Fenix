@@ -45,7 +45,7 @@
     "lint-staged": "^8.1.5",
     "prettier": "1.16.4",
     "react": "16.8.3",
-    "react-native": "0.59.2"
+    "react-native": "0.62.3"
   },
   "homepage": "https://github.com/react-native-community/react-native-blur",
   "husky": {
