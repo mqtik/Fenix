@@ -19,7 +19,7 @@
     "@react-native-community/blur": "^3.3.1",
     "@react-native-mapbox-gl/maps": "^7.0.0-rc2",
     "@turf/turf": "^5.1.6",
-    "epubjs-rn": "0.0.127",
+    "epubjs-rn": "0.1.5",
     "geolib": "^3.0.4",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
